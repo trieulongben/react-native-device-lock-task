@@ -1,0 +1,57 @@
+{
+    "name": "react-native-device-lock-task",
+    "version": "0.0.1",
+    "description": "React Native New Architecture - handle lock task/pinning application to screen  ",
+    "react-native": "js/index",
+    "source": "js/index",
+    "files": [
+        "js",
+        "android",
+        "ios",
+        "rtn-calculator.podspec",
+        "!android/build",
+        "!ios/build",
+        "!**/__tests__",
+        "!**/__fixtures__",
+        "!**/__mocks__"
+    ],
+    "keywords": [
+        "react-native",
+        "ios",
+        "android",
+        "lock-task",
+        "lock task",
+        "pin app",
+        "new architecture",
+        "turbo-module",
+        "kotlin",
+        "app pinning"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/trieulongben/react-native-device-lock-task.git"
+    },
+    "author": "Long Le benjamin.le2206@gmail.com (https://github.com/trieulongben)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/trieulongben/react-native-lock-task/issues"
+    },
+    "homepage": "https://github.com/trieulongben/react-native-lock-task#readme",
+    "devDependencies": {},
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+    },
+    "codegenConfig": {
+        "name": "RTNDeviceLockTask",
+        "type": "modules",
+        "jsSrcsDir": "./js/",
+        "android": {
+            "javaPackageName": "com.rtn_device_lock_task"
+        }
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
