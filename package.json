@@ -1,6 +1,6 @@
 {
     "name": "react-native-device-lock-task",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "React Native New Architecture - handle lock task/pinning application to screen  ",
     "react-native": "js/index",
     "source": "js/index",
