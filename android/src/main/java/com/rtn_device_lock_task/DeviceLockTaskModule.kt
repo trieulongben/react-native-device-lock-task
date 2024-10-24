@@ -3,6 +3,7 @@ package com.rtn_device_lock_task
 import android.app.ActivityManager
 import android.content.Context
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
@@ -21,7 +22,7 @@ class DeviceLockTaskModule(reactContext: ReactApplicationContext) :
                 // When SDK version is 23
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     val lockTaskMode = activityManager.lockTaskModeState
-                    promise!!.resolve(lockTaskMode == ActivityManager.LOCK_TASK_MODE_PINNED)
+                    promise!!.resolve(lockTaskMode == ActivityManager.LOCK_TASK_MODE_LOCKED)
                 } else {
                     promise!!.resolve(activityManager.isInLockTaskMode)
                 }
